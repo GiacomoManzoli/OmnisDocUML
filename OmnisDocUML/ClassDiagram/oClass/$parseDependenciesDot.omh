@@ -1,0 +1,21 @@
+Calculate lcResult as ''
+;  Breakpoint
+For ilDependencyList.$line from 1 to ilDependencyList.$linecount step 1
+	;  Calculate lcResult as con(lcResult,chr(13),'[',icObjName,'] ',ilDependencyList.dependencyTypeArrow,' [',ilDependencyList.classname,']')
+	Do method parseArrow (ilDependencyList.dependencyTypeArrow) Returns lcEdgeStyle
+	If not(isclear(lcEdgeStyle))
+		Calculate lcEdgeStyle as con(' ,',lcEdgeStyle)
+	End If
+	
+	Calculate lcLabel as ''
+	If ilDependencyList.dependencyType='association'
+		Calculate lcLabel as ilDependencyList.varName
+	End If
+	Begin text block
+	;  Text: {[[ [icQualifiedName] ] [ilDependencyList.varName] [ilDependencyList.dependencyTypeArrow] [[ [ilDependencyList.classname] ]} (Linefeed)
+	Text: {"[icQualifiedName]"->"[ilDependencyList.classname]" [[label="[lcLabel]"[lcEdgeStyle]]} (Linefeed)     ;; [ilDependencyList.dependencyTypeArrow]
+	End text block
+	Get text block lcText
+	Calculate lcResult as con(lcResult,lcText)
+End For
+Quit method lcResult

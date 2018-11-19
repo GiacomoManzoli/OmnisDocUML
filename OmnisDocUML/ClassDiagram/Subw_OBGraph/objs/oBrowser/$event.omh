@@ -1,0 +1,3 @@
+On evControlEvent
+	Calculate lrRow as pInfo
+	Do ioGraphVizInterface.$evControlEvent(lrRow)

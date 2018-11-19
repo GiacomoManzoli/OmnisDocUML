@@ -1,0 +1,19 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "loClass",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "oClass",
+				"sublen": 0
+			}
+		]
+	}
+]

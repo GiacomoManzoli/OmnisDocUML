@@ -1,0 +1,7 @@
+Switch pcActionName
+	Case 'actSave'
+		Calculate $cinst.$objs.itmExport.$enabled as pbEnabled
+		Calculate $cinst.$objs.itmSave.$enabled as pbEnabled
+	Default
+		Do inherited
+End Switch

@@ -1,0 +1,11 @@
+Do lvParamsRow.$define()
+Do lvParamsRow.$cols.$add('src',kCharacter,kSimplechar)
+Do lvParamsRow.$cols.$add('engine',kCharacter,kSimplechar)
+Calculate lvParamsRow.src as pcContent
+
+If pcEngineName<>''
+	Calculate icCurrentEngineName as pcEngineName
+End If
+
+Calculate lvParamsRow.engine as icCurrentEngineName
+Do iirOBrowser.$callmethod('updateGraphViz',lvParamsRow)

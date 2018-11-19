@@ -1,0 +1,8 @@
+Calculate lcLibName as ilLibNamesList.[ilLibNamesList.$line].name
+
+Do lrEvParamsRow.$define()
+Do lrEvParamsRow.$cols.$add('libName',kCharacter,kSimplechar,1000)
+Calculate lrEvParamsRow.libName as lcLibName
+
+Do $cinst.$_notifyEvent('evLibPicked',lrEvParamsRow)
+Do $cwind.$close()

@@ -1,0 +1,7 @@
+If pos('$',pcName)<>1
+	Quit method '-'     ;; Private
+Else If pos('_',pcName)=2
+	Quit method '*'     ;; Starts with "$_" -> protected (can't use #)
+Else
+	Quit method '+'     ;; Public
+End If

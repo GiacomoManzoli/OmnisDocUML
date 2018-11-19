@@ -1,0 +1,6 @@
+Do method makeVarList ('Params',pirMethodRef.$lvardefs.$ref) Returns lvVarsList
+
+Do lvVarsList.$search(pos('p',$ref.name)=1)
+Do lvVarsList.$remove(kListKeepSelected)
+
+Quit method lvVarsList

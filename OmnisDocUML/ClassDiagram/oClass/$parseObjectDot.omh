@@ -1,0 +1,9 @@
+Do method parseVarsDot Returns lcVars
+Do method parseMethodsDot Returns lcMethods
+
+Begin text block
+Text: {"[icQualifiedName]" [[ label="{[icQualifiedName] | [lcVars] | [lcMethods] }"]}
+End text block
+Get text block lcText
+;  Breakpoint
+Quit method lcText

@@ -1,0 +1,7 @@
+Do method makeVarList ('Instance',iirClassRef.$ivardefs.$ref) Returns lvList
+;  Do $objects.oTestObj.$cvardefs.$makelist('cvar',$ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objinitval,$ref.$desc) Returns lvList2
+Do method makeVarList ('Class',iirClassRef.$cvardefs.$ref) Returns lvList2
+Do lvList.$merge(lvList2,kTrue)
+
+Calculate ilVarsList as lvList
+;  Breakpoint

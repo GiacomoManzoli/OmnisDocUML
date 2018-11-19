@@ -1,0 +1,10 @@
+
+
+Switch pcEvName
+	Case 'evRenderAll'
+		Do method renderClassNameList (ilClassNamesList)
+	Case 'evRenderSelected'
+		Do llSelectedClassNamesList.$copydefinition(ilClassNamesList)
+		Do llSelectedClassNamesList.$merge(ilClassNamesList,kTrue,kTrue)
+		Do method renderClassNameList (llSelectedClassNamesList)
+End Switch

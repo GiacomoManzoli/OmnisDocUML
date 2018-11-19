@@ -1,0 +1,23 @@
+Begin text block
+For ilMethodList.$line from 1 to ilMethodList.$linecount step 1
+	Calculate lcResult as con(ilMethodList.visibility,' ',ilMethodList.name)
+	Calculate lcParams as '('
+	For ilMethodList.params.$line from 1 to ilMethodList.params.$linecount step 1
+		Calculate %%parName as ilMethodList.params.name
+		Calculate %%parType as ilMethodList.params.type
+		Calculate %%val as ilMethodList.params.defaultVal
+		Calculate lcParams as con(lcParams,%%parName,': ',%%parType)
+		If not(isclear(%%val))
+			Calculate lcParams as con(lcParams,' = ',%%val)
+		End If
+		If ilMethodList.params.$line<>ilMethodList.params.$linecount
+			Calculate lcParams as con(lcParams,',')
+		End If
+	End For
+	Calculate lcParams as con(lcParams,')')
+	Calculate lcResult as con(lcResult,lcParams)
+	Text: {[lcResult]\l}
+End For
+End text block
+Get text block lcText
+Quit method lcText

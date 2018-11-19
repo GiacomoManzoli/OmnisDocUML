@@ -1,0 +1,4 @@
+Switch pcEvName
+	Case 'evLibPicked'
+		Do method loadLibrary (prEvDataRow.libName)
+End Switch

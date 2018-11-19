@@ -1,0 +1,13 @@
+;
+Set reference iirClassRef to loUtils.$qualifiedNameToRef(pcQualifiedName)
+Calculate icObjName as iirClassRef().$name
+Calculate icQualifiedName as pcQualifiedName
+
+If loUtils.$hasLibPrefix(icQualifiedName)
+	Calculate icLibName as loUtils.$getLibNameFromQualifiedName(pcQualifiedName)
+Else
+	Calculate icLibName as $clib().$name
+End If
+Do method loadVarsData
+Do method loadMethodsData
+Do method loadDependencies

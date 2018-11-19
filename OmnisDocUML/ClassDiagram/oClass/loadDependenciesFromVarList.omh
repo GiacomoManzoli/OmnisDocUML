@@ -1,0 +1,26 @@
+Do llDependencyList.$define()
+Do llDependencyList.$cols.$add('scope',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('classname',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('varName',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('dependencyType',kCharacter,kSimplechar,100)
+Do llDependencyList.$cols.$add('dependencyTypeArrow',kCharacter,kSimplechar,100)
+
+For plVarList.$line from 1 to plVarList.$linecount step 1
+	If plVarList.type=kObject|plVarList.type=kObjectref|plVarList.type=kItemref
+		If not(isclear(plVarList.subtype))
+			Do llDependencyList.$add()
+			Calculate llDependencyList.$line as llDependencyList.$linecount
+			Calculate llDependencyList.scope as plVarList.scope
+			Calculate llDependencyList.dependencyType as pcDepType
+			Calculate llDependencyList.dependencyTypeArrow as pcDepTypeArrow
+			Calculate lcClassname as plVarList.subtype
+			If not(loUtils.$hasLibPrefix(lcClassname))
+				Calculate lcClassname as con(icLibName,'.',lcClassname)
+			End If
+			Calculate llDependencyList.classname as lcClassname
+			
+			Calculate llDependencyList.varName as plVarList.name
+		End If
+	End If
+End For
+Quit method llDependencyList

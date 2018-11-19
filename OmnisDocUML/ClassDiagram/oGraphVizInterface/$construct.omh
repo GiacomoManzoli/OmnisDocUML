@@ -1,0 +1,12 @@
+;  Enter your initialization code here
+Calculate icCurrentEngineName as 'dot'
+
+
+Do ilEngineNameList.$define()
+Do ilEngineNameList.$cols.$add('name',kCharacter,kSimplechar,100)
+Do ilEngineNameList.$add('circo')
+Do ilEngineNameList.$add('dot')
+Do ilEngineNameList.$add('fdp')
+Do ilEngineNameList.$add('neato')
+Do ilEngineNameList.$add('osage')
+Do ilEngineNameList.$add('twopi')

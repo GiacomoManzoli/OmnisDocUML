@@ -1,0 +1,15 @@
+Switch pcEvName
+	Case 'evOpenLibrary'
+		Do $windows.Wnd_PickLibrary.$openmodal('*',kWindowCenterRelative,$cwind) Returns lirWndRef
+		Do lirWndRef.$setCallback(con($cinst().$fullname(),'.$wndOpenLibraryCallback'))
+		
+	Case 'evSaveSource'
+		Do method saveSource
+		
+	Case 'evExport'
+		Do ioGraphViz.$requestGraphSvg(icDotGraph,,con($cinst().$fullname,'.$graphVizCallback'))
+	Case 'evQuit'
+		Do $cwind.$close()
+		
+		
+End Switch

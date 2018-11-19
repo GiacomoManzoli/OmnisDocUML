@@ -1,0 +1,16 @@
+Calculate lcStart as 'digraph hierarchy { node[shape=record,style=filled,fillcolor=gray95]   graph [fontname = "helvetica"]; node [fontname = "helvetica"]; edge [fontname = "helvetica"];'
+Calculate lcResult as ''
+Calculate lcResultDep as ''
+For lnLine from 1 to plClassNamesList.$linecount step 1
+	Calculate loClass as $clib.$objects.oClass.$new(plClassNamesList.[lnLine].name)
+	Do loClass.$parseObjectDot() Returns lcText
+	Calculate lcResult as con(lcResult,chr(13),lcText)
+	Do loClass.$parseDependenciesDot() Returns lcTextDep
+	Calculate lcResultDep as con(lcResultDep,chr(13),lcTextDep)
+End For
+Calculate icDotGraph as con(lcStart,lcResult,chr(13),lcResultDep,'}')
+
+Do method setSaveEnabled (kTrue)
+
+Do iirMeSource.$redraw(1,1)
+Do ioGraphViz.$renderGraph(icDotGraph)

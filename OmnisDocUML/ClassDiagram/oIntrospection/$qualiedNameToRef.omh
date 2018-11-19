@@ -1,0 +1,14 @@
+Calculate lbHasLibPrefix as pos('.',pcQualifiedName)<>0
+If not(lbHasLibPrefix)
+	Calculate lcLibPrefix as $clib().$name
+	Calculate lcClassName as pcQualifiedName
+Else
+	Calculate lcLibPrefix as mid(pcQualifiedName,1,pos('.',pcQualifiedName)-1)
+	Calculate lcClassName as mid(pcQualifiedName,pos('.',pcQualifiedName)+1)
+End If
+
+If $libs.[lcLibPrefix].$classes.[lcClassName].$ident
+	Quit method $libs.[lcLibPrefix].$classes.[lcClassName].$ref
+Else
+	Quit method #NULL
+End If

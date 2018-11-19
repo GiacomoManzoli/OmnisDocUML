@@ -1,0 +1,13 @@
+Do prData.evType
+
+Calculate lcEvName as prData.evType
+
+Calculate lrData as OJSON.$jsontolistorrow(prData.data)
+
+If $cclass.$methods.$findname(lcEvName)
+	Do method [lcEvName] (lrData) Returns lrRefinedData
+End If
+
+If [prData.omnisCallback].$cando()
+	Do [prData.omnisCallback](lcEvName,lrData,lrRefinedData)
+End If

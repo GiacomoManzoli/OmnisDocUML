@@ -1,0 +1,5 @@
+;
+Switch pcActionName
+	Default
+		Do $cinst.$objs.$sendall($ref.$enabled.$assign(pbEnabled))
+End Switch

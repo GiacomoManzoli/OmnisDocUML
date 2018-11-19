@@ -1,0 +1,3 @@
+If ibCanCallCallback
+	Do [icCallback](pcEvName,prEvDataRow)
+End If

@@ -1,0 +1,70 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setCallback",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pcCallback",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1,
+				"desc": "Notation to the event handler"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$_notifyEvent",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pcEvName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			},
+			{
+				"name": "prEvDataRow",
+				"order": 2,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2,
+				"initval": "row()"
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

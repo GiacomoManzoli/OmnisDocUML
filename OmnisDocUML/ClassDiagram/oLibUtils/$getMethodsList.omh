@@ -1,0 +1,3 @@
+Do $libs.[pcLibName].$classes.[pcClassName].$methods.$makelist($ref.$name) Returns llResultList
+Do llResultList.$cols.1.$name.$assign('name')
+Quit method llResultList

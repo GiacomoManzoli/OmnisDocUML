@@ -1,0 +1,3 @@
+On evClick     ;; Event Parameters - pRow ( Itemreference )
+	
+On evDoubleClick     ;; Event Parameters - pRow ( Itemreference )

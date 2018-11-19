@@ -1,0 +1,12 @@
+Do method parseVars Returns lcVars
+Do method parseMethods Returns lcMethods
+
+Begin text block
+Text: {[[ [icQualifiedName] |} (Linefeed)
+Text: {[lcVars] |}
+Text: {[lcMethods]}
+Text: {]} (Linefeed)
+End text block
+Get text block lcText
+;  Breakpoint
+Quit method lcText

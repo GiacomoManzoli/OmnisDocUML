@@ -1,0 +1,11 @@
+Calculate lnFirstPos as pos('.',pcQualifiedName)
+If lnFirstPos=0
+	Quit method ''
+End If
+
+If lnFirstPos=1     ;; Gli external iniziano con un "."
+	Calculate pcQualifiedName as mid(pcQualifiedName,2)
+	Quit method $cinst.$getLibNameFromQualifiedName(pcQualifiedName)
+End If
+
+Quit method mid(pcQualifiedName,1,lnFirstPos-1)

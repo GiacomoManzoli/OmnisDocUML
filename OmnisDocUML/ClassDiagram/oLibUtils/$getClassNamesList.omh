@@ -1,0 +1,25 @@
+Do llResultList.$define() Returns llResultList
+Do llResultList.$cols.$add('name',kCharacter,kSimplechar,1000)
+
+Do $cinst.$getLibNamesList() Returns llLibsList
+If pcLibName=''
+	For lnLine from 1 to llLibsList.$linecount step 1
+		Do $cinst.$getClassNamesList(llLibsList.[lnLine].C1,pbAddLibPrefix) Returns llPartialResultList
+		Do llResultList.$merge(llPartialResultList,kTrue)
+	End For
+Else
+	Do llLibsList.$search($ref.C1=pcLibName,1,0,0,0) Returns lnLibLine
+	If lnLibLine<>0
+		Do $libs.[pcLibName].$classes.$makelist($ref.$name) Returns llResultList
+		If pbIgnoreSystem
+			Do llResultList.$search(pos('#',$ref.C1)=1)
+			Do llResultList.$remove(kListDeleteSelected)
+		End If
+		If pbAddLibPrefix
+			Do llResultList.$sendall($ref.1.$assign(con(pcLibName,'.',$sendallref.1)))
+		End If
+	End If
+End If
+Do llResultList.$cols.1.$name.$assign('name')
+;  Breakpoint
+Quit method llResultList

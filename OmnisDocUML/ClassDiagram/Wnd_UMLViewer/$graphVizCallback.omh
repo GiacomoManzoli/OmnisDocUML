@@ -1,0 +1,11 @@
+
+Switch pcEvName
+	Case 'evGraphSvg'
+		Do FileOps.$putfilename(lcFilePath,'Save graph SVG','SVG|(*.svg)') Returns lbChosen
+		If lbChosen
+			Do loFile.$createfile(lcFilePath)
+			Do loFile.$writecharacter(kUniTypeUTF8,prEvParams.result)
+			Do loFile.$closefile()
+		End If
+		
+End Switch

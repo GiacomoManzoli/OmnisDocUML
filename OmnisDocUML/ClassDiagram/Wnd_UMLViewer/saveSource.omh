@@ -1,0 +1,14 @@
+Calculate lcFilter as 'DOT Graph (*.gv)|(*.gv)|Text file (*.txt)|(.txt)'
+
+Do FileOps.$putfilename(lcFilePath,'Save file',lcFilter) Returns lbChosen
+If lbChosen
+	Do loFile.$createfile(lcFilePath) Returns lbOpen
+	If lbOpen
+		Do loFile.$writecharacter(kUniTypeUTF8,icDotGraph,kFalse) Returns lbWritten
+		If not(lbWritten)
+			OK message Error! {An error occurred while saving [lcFilePath]}
+		End If
+	Else
+		OK message Error! {The file could not be opened}
+	End If
+End If

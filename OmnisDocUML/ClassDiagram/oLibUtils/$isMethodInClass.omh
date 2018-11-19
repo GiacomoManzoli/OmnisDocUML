@@ -1,0 +1,10 @@
+Do $cinst.$isClassInLib(pcLibName,pcClassName) Returns lbClassOk
+
+If lbClassOk
+	Do $cinst.$getMethodsList(pcLibName,pcClassName) Returns llMethodList
+	Do llMethodList.$search($ref.name=pcMethodName,1,0,0,0) Returns lnLine
+	Calculate lbMethodOk as lnLine<>0
+Else
+	Calculate lbMethodOk as kFalse
+End If
+Quit method lbMethodOk

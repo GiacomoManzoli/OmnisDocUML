@@ -1,0 +1,12 @@
+Do pirVarGroup.$makelist(pcScope,$ref.$name,$ref.$objtype,$ref.$objsubtype,$ref.$objinitval,$ref.$desc) Returns lvTempList
+Do lvList.$define()
+Do lvList.$cols.$add('scope',kCharacter,kSimplechar,1000)
+Do lvList.$cols.$add('name',kCharacter,kSimplechar,1000)
+Do lvList.$cols.$add('type',kCharacter,kSimplechar,1000)
+Do lvList.$cols.$add('subtype',kCharacter,kSimplechar,1000)
+Do lvList.$cols.$add('defaultlVal',kCharacter,kSimplechar,1000)
+Do lvList.$cols.$add('desc',kCharacter,kSimplechar,1000)
+Do lvList.$merge(lvTempList,kFalse)
+
+
+Quit method lvList

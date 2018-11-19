@@ -1,0 +1,4 @@
+Do $cinst.$getLibNamesList() Returns llLib
+Do llLib.$search($ref.name=pcLibName,1,0,0,0) Returns lnLine
+Calculate lbOpen as lnLine<>0
+Quit method lbOpen

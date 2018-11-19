@@ -1,0 +1,30 @@
+[
+	{
+		"name": "$enableAction",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pcActionName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1,
+				"desc": "Action to be enable"
+			},
+			{
+				"name": "pbEnabled",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"desc": "Enable or disable the action"
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

@@ -1,0 +1,7 @@
+On evClick     ;; Event Parameters - pRow ( Itemreference )
+	
+On evDoubleClick     ;; Event Parameters - pRow ( Itemreference )
+	Do method renderClassNameList (ilClassNamesList.[pLineNumber])
+	
+On evOpenContextMenu
+	Do pContextMenu.$setCallback(con($cinst().$fullname(),'.$renderMenuCallback'))

@@ -1,0 +1,50 @@
+{
+	"classtype": "kMenu",
+	"internalversion": 2,
+	"superclass": "mnu_Base",
+	"designtaskname": "Startup_Task",
+	"nextident": 1015,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "ibCanCallCallback",
+			"order": 1,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "icCallback",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-11-18 22:52:45",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"enabled": true,
+		"external": true,
+		"helpfile": 0,
+		"helptext": "",
+		"inheritedorder": 0,
+		"issupercomponent": false,
+		"moddate": "2018-11-16 08:08:52",
+		"showascheckedout": false,
+		"title": {
+			"type": 0,
+			"calc": "Rendering"
+		},
+		"userinfo": "",
+		"users": "12345678",
+		"version": ""
+	}
+}

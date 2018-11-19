@@ -1,0 +1,16 @@
+Do ilVarsList.$sort($ref.scope)
+Begin text block
+For ilVarsList.$line from 1 to ilVarsList.$linecount step 1
+	Calculate lcRow as con(ilVarsList.name,': ',ilVarsList.type)
+	If not(isclear(ilVarsList.subtype))
+		Calculate lcRow as con(lcRow,' (',ilVarsList.subtype,')')
+	End If
+	If not(isclear(ilVarsList.defaultVal))
+		Calculate lcRow as con(lcRow,' = ',ilVarsList.defaultVal)
+	End If
+	Text: {[lcRow]} (Linefeed)
+End For
+End text block
+Get text block lcText
+
+Quit method lcText

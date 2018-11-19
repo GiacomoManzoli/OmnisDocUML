@@ -1,0 +1,9 @@
+Do method loadDependenciesFromVarList (ilVarsList,'association','->') Returns ilDependencyList
+For ilMethodList.$line from 1 to ilMethodList.$linecount step 1
+	Do method loadDependenciesFromVarList (ilMethodList.params,'dependency','-->') Returns llTempList
+	Do ilDependencyList.$merge(llTempList,kTrue)
+	Do method loadDependenciesFromVarList (ilMethodList.vars,'dependency','-->') Returns llTempList
+	Do ilDependencyList.$merge(llTempList,kTrue)
+End For
+
+Do ilDependencyList.$cols.classname.$removeduplicates(kTrue,kFalse)

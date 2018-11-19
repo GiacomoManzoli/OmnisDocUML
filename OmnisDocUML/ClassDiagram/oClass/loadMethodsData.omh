@@ -1,0 +1,20 @@
+Do ilMethodList.$define()
+Do ilMethodList.$cols.$add('name',kCharacter,kSimplechar,1000)
+Do ilMethodList.$cols.$add('ref',kItemref)
+Do ilMethodList.$cols.$add('desc',kCharacter,kSimplechar)
+Do ilMethodList.$cols.$add('notes',kCharacter,kSimplechar)
+Do ilMethodList.$cols.$add('visibility',kCharacter,kSimplechar,20)
+Do ilMethodList.$cols.$add('vars',kList)
+Do ilMethodList.$cols.$add('params',kList)
+Do iirClassRef.$methods.$makelist($ref.$name,$ref,$ref.$desc,$ref.$notes) Returns llTempMethodList
+Do ilMethodList.$merge(llTempMethodList,kFalse)
+
+
+For ilMethodList.$line from 1 to ilMethodList.$linecount step 1
+	Do method calculateMethodVisibiltiy (ilMethodList.name) Returns ilMethodList.visibility
+	Do method loadMethodVars (ilMethodList.ref) Returns ilMethodList.vars
+	Do method loadMethodParams (ilMethodList.ref) Returns ilMethodList.params
+End For
+
+
+;  Breakpoint

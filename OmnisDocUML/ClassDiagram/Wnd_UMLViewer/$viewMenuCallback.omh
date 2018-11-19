@@ -1,0 +1,7 @@
+Switch pcEvName
+	Case 'evShowSource'
+		Calculate iirMainPagedPane.$currentpage as 2
+		Do iirMeSource.$redraw(1,1)
+	Case 'evShowImage'
+		Calculate iirMainPagedPane.$currentpage as 1
+End Switch

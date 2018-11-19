@@ -1,0 +1,30 @@
+{
+	"ident": 1027,
+	"order": 16385,
+	"objtype": "kText",
+	"properties": {
+		"align": "kLeftJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 3,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 19,
+		"left": 37,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "http://www.nomnoml.com/"
+		},
+		"textcolor": "kColorWindowText",
+		"top": 12,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 242
+	}
+}

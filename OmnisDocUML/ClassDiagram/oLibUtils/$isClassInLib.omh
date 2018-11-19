@@ -1,0 +1,9 @@
+Do $cinst.$isLibOpen(pcLibName) Returns lbOpen
+If lbOpen
+	Do $cinst.$getClassNamesList(pcLibName) Returns llClassList
+	Do llClassList.$search($ref.name=pcClassName,1,0,0,0) Returns lnLine
+Else
+	Calculate lnLine as 0
+End If
+Calculate lbExists as lnLine<>0
+Quit method lbExists

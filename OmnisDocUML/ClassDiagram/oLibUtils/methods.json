@@ -1,0 +1,357 @@
+[
+	{
+		"name": "$getLibNamesList",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lvList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$qualifiedNameToRef",
+		"ident": 8,
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pcQualifiedName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1,
+				"desc": "Object class 'libName.className' or 'className'"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbHasLibPrefix",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lcClassName",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100
+			},
+			{
+				"name": "lcLibPrefix",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100
+			}
+		]
+	},
+	{
+		"name": "$getClassNamesList",
+		"ident": 3,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pcLibName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1,
+				"desc": "Nome della libreria in cui cercare, '' per tutte le librerie"
+			},
+			{
+				"name": "pbAddLibPrefix",
+				"order": 7,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kFalse",
+				"desc": "kTrue to add the libName preifx"
+			},
+			{
+				"name": "pbIgnoreSystem",
+				"order": 8,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue",
+				"desc": "kTrue to skip the '#' classes"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "llLibsList",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llPartialResultList",
+				"order": 6,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llResultList",
+				"order": 4,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnLibLine",
+				"order": 3,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			},
+			{
+				"name": "lnLine",
+				"order": 5,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getMethodsList",
+		"ident": 1,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pcLibName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pcClassName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "llResultList",
+				"order": 3,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$isLibOpen",
+		"ident": 2,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pcLibName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbOpen",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "llLib",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnLine",
+				"order": 3,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$isClassInLib",
+		"ident": 4,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pcLibName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			},
+			{
+				"name": "pcClassName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbExists",
+				"order": 6,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lbOpen",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "llClassList",
+				"order": 4,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnLine",
+				"order": 5,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$isMethodInClass",
+		"ident": 5,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pcLibName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			},
+			{
+				"name": "pcClassName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 2
+			},
+			{
+				"name": "pcMethodName",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lbClassOk",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lbMethodOk",
+				"order": 5,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "llMethodList",
+				"order": 6,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lnLine",
+				"order": 7,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$hasLibPrefix",
+		"ident": 6,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pcClassaname",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getLibNameFromQualifiedName",
+		"ident": 7,
+		"order": 9,
+		"pvardefs": [
+			{
+				"name": "pcQualifiedName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lnFirstPos",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	}
+]

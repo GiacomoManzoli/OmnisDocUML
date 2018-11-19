@@ -1,0 +1,3 @@
+Do $libs.$makelist($ref.$name) Returns lvList
+Do lvList.$cols.1.$name.$assign('name')
+Quit method lvList
