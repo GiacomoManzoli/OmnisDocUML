@@ -162,9 +162,68 @@
 		]
 	},
 	{
+		"name": "loadDependenciesFromSuperclass",
+		"ident": 22,
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "%%B",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "%%n",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcClassname",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000
+			},
+			{
+				"name": "llDependenciesList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "llDependencyList",
+				"order": 7,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "loUtils",
+				"order": 4,
+				"type": "kObject",
+				"subtype": "OmnisDocUML.oLibUtils",
+				"sublen": 0
+			},
+			{
+				"name": "lrSuperclassRef",
+				"order": 5,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "loadDependenciesFromVarList",
 		"ident": 14,
-		"order": 8,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "plVarList",
@@ -216,9 +275,26 @@
 		]
 	},
 	{
+		"name": "makeDependenciesList",
+		"ident": 21,
+		"order": 10,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "llDependencyList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "calculateMethodVisibiltiy",
 		"ident": 10,
-		"order": 9,
+		"order": 11,
 		"pvardefs": [
 			{
 				"name": "pcName",
@@ -236,7 +312,7 @@
 	{
 		"name": "makeVarList",
 		"ident": 8,
-		"order": 10,
+		"order": 12,
 		"pvardefs": [
 			{
 				"name": "pcScope",
@@ -275,7 +351,7 @@
 	{
 		"name": "-- UML conv",
 		"ident": 3,
-		"order": 11,
+		"order": 13,
 		"pvardefs": [
 
 		],
@@ -287,7 +363,7 @@
 	{
 		"name": "$parseObject",
 		"ident": 4,
-		"order": 12,
+		"order": 14,
 		"pvardefs": [
 
 		],
@@ -318,7 +394,7 @@
 	{
 		"name": "parseVars",
 		"ident": 5,
-		"order": 13,
+		"order": 15,
 		"pvardefs": [
 
 		],
@@ -349,7 +425,7 @@
 	{
 		"name": "parseMethods",
 		"ident": 9,
-		"order": 14,
+		"order": 16,
 		"pvardefs": [
 
 		],
@@ -401,7 +477,7 @@
 	{
 		"name": "$parseDependencies",
 		"ident": 12,
-		"order": 15,
+		"order": 17,
 		"pvardefs": [
 
 		],
@@ -425,7 +501,7 @@
 	{
 		"name": "-- UML --- DOT",
 		"ident": 20,
-		"order": 16,
+		"order": 18,
 		"pvardefs": [
 
 		],
@@ -437,11 +513,26 @@
 	{
 		"name": "$parseObjectDot",
 		"ident": 15,
-		"order": 17,
+		"order": 19,
 		"pvardefs": [
-
+			{
+				"name": "pbRenderFieldAndMethod",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1,
+				"desc": "kTrue -> also renders the class fields and methods"
+			}
 		],
 		"lvardefs": [
+			{
+				"name": "lcFieldAndMethods",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
 			{
 				"name": "lcMethods",
 				"order": 3,
@@ -468,7 +559,7 @@
 	{
 		"name": "parseVarsDot",
 		"ident": 16,
-		"order": 18,
+		"order": 20,
 		"pvardefs": [
 
 		],
@@ -499,7 +590,7 @@
 	{
 		"name": "parseMethodsDot",
 		"ident": 17,
-		"order": 19,
+		"order": 21,
 		"pvardefs": [
 
 		],
@@ -551,7 +642,7 @@
 	{
 		"name": "$parseDependenciesDot",
 		"ident": 18,
-		"order": 20,
+		"order": 22,
 		"pvardefs": [
 
 		],
@@ -589,7 +680,7 @@
 	{
 		"name": "parseArrow",
 		"ident": 19,
-		"order": 21,
+		"order": 23,
 		"pvardefs": [
 			{
 				"name": "pcArrow",
@@ -601,7 +692,13 @@
 			}
 		],
 		"lvardefs": [
-
+			{
+				"name": "lcStyle",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
 		]
 	}
 ]

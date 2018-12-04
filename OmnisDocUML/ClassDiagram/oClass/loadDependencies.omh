@@ -1,8 +1,12 @@
-Do method loadDependenciesFromVarList (ilVarsList,'association','->') Returns ilDependencyList
+Do method loadDependenciesFromSuperclass Returns ilDependencyList
+
+Do method loadDependenciesFromVarList (ilVarsList,'association',ckArrowAssociation) Returns llTempList
+Do ilDependencyList.$merge(llTempList,kTrue)
+
 For ilMethodList.$line from 1 to ilMethodList.$linecount step 1
-	Do method loadDependenciesFromVarList (ilMethodList.params,'dependency','-->') Returns llTempList
+	Do method loadDependenciesFromVarList (ilMethodList.params,'association',ckArrowAssociation) Returns llTempList
 	Do ilDependencyList.$merge(llTempList,kTrue)
-	Do method loadDependenciesFromVarList (ilMethodList.vars,'dependency','-->') Returns llTempList
+	Do method loadDependenciesFromVarList (ilMethodList.vars,'association',ckArrowAssociation) Returns llTempList
 	Do ilDependencyList.$merge(llTempList,kTrue)
 End For
 

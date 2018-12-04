@@ -8,7 +8,7 @@ For ilDependencyList.$line from 1 to ilDependencyList.$linecount step 1
 	End If
 	
 	Calculate lcLabel as ''
-	If ilDependencyList.dependencyType='association'
+	If ilDependencyList.scope=ckScopeInstance
 		Calculate lcLabel as ilDependencyList.varName
 	End If
 	Begin text block

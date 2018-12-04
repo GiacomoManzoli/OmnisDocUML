@@ -1,9 +1,72 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 8,
+	"internalversion": 41,
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
-
+		{
+			"name": "ckArrowAssociation",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 5,
+			"initval": "'->'"
+		},
+		{
+			"name": "ckArrowDependency",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 5,
+			"initval": "'-->'"
+		},
+		{
+			"name": "ckArrowGeneralization",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 5,
+			"initval": "'--|>'"
+		},
+		{
+			"name": "ckScopeClass",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100,
+			"initval": "'class'"
+		},
+		{
+			"name": "ckScopeInstance",
+			"order": 4,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100,
+			"initval": "'instance'"
+		},
+		{
+			"name": "ckScopeLocal",
+			"order": 5,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100,
+			"initval": "'local'"
+		},
+		{
+			"name": "ckScopeParams",
+			"order": 7,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100,
+			"initval": "'params'"
+		},
+		{
+			"name": "ckScopeSuperclass",
+			"order": 6,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100,
+			"initval": "'superclass'"
+		}
 	],
 	"ivardefs": [
 		{
@@ -66,7 +129,7 @@
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-11-19 07:53:54",
+		"moddate": "2018-12-04 22:13:53",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

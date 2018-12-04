@@ -1,0 +1,6 @@
+;
+Switch pcActionName
+	Case 'itmFieldAndMethod'
+		Calculate ibFieldAndMethod as pbChecked
+		Do $cinst.$objs.itmFieldAndMethods.$checked.$assign(pbChecked)
+End Switch

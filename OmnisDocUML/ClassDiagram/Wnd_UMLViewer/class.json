@@ -1,6 +1,6 @@
 {
 	"classtype": "kWindow",
-	"internalversion": 8,
+	"internalversion": 18,
 	"designtaskname": "Startup_Task",
 	"nextident": 1023,
 	"lastgroupident": 0,
@@ -8,6 +8,13 @@
 
 	],
 	"ivardefs": [
+		{
+			"name": "ibRenderCompact",
+			"order": 9,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
 		{
 			"name": "icDotGraph",
 			"order": 6,
@@ -32,6 +39,13 @@
 		{
 			"name": "iirMenuFile",
 			"order": 8,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iirMenuRenderOptions",
+			"order": 10,
 			"type": "kItemref",
 			"subtype": "",
 			"sublen": 0
@@ -108,7 +122,7 @@
 		"menunames": "",
 		"minimizebox": true,
 		"minimizeiconid": 2006,
-		"moddate": "2018-11-19 07:53:24",
+		"moddate": "2018-12-04 22:12:37",
 		"modelessdata": true,
 		"showascheckedout": false,
 		"showcommands": false,

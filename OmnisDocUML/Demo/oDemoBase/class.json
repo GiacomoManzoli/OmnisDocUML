@@ -6,39 +6,19 @@
 
 	],
 	"ivardefs": [
-		{
-			"name": "icCurrentEngineName",
-			"order": 4,
-			"type": "kCharacter",
-			"subtype": "kSimplechar",
-			"sublen": 100
-		},
-		{
-			"name": "iirOBrowser",
-			"order": 1,
-			"type": "kItemref",
-			"subtype": "",
-			"sublen": 0
-		},
-		{
-			"name": "ilEngineNameList",
-			"order": 3,
-			"type": "kList",
-			"subtype": "",
-			"sublen": 0
-		}
+
 	],
 	"properties": {
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2018-11-18 22:52:45",
+		"createdate": "2018-12-04 20:59:25",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-11-23 00:14:37",
+		"moddate": "2018-12-04 21:30:13",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

@@ -1,9 +1,4 @@
-Do llDependencyList.$define()
-Do llDependencyList.$cols.$add('scope',kCharacter,kSimplechar,1000)
-Do llDependencyList.$cols.$add('classname',kCharacter,kSimplechar,1000)
-Do llDependencyList.$cols.$add('varName',kCharacter,kSimplechar,1000)
-Do llDependencyList.$cols.$add('dependencyType',kCharacter,kSimplechar,100)
-Do llDependencyList.$cols.$add('dependencyTypeArrow',kCharacter,kSimplechar,100)
+Do method makeDependenciesList Returns llDependencyList
 
 For plVarList.$line from 1 to plVarList.$linecount step 1
 	If plVarList.type=kObject|plVarList.type=kObjectref|plVarList.type=kItemref

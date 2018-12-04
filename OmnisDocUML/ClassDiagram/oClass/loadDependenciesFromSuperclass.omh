@@ -1,0 +1,14 @@
+Do method makeDependenciesList Returns llDependenciesList
+
+Calculate lcClassname as $libs.[icLibName].$classes.[icObjName].$superclass
+If lcClassname=''
+	Quit method llDependenciesList
+End If
+If not(loUtils.$hasLibPrefix(lcClassname))
+	Calculate lcClassname as con(icLibName,'.',lcClassname)
+End If
+
+Do llDependenciesList.$add(ckScopeSuperclass,lcClassname,'$inherited','generalization',ckArrowGeneralization)
+Quit method llDependenciesList
+
+Breakpoint

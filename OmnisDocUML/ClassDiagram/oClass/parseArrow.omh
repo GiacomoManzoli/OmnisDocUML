@@ -1,5 +1,11 @@
+;  http://wingraphviz.sourceforge.net/wingraphviz/language/arrow_type.htm
+
 Switch pcArrow
-	Case '-->'
-		Quit method 'style=dashed'
+	Case ckArrowDependency
+		Quit method 'style=dashed, arrowhead="open"'
+	Case ckArrowGeneralization
+		Quit method 'arrowhead="empty"'
+	Case ckArrowAssociation
+		Quit method ' arrowhead="open"'
 End Switch
 Quit method ''

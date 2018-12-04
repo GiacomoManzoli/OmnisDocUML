@@ -1,0 +1,5 @@
+Calculate ibFieldAndMethod as not(ibFieldAndMethod)
+Calculate $cfield.$checked as ibFieldAndMethod
+Calculate lrParamsRow as row(ibFieldAndMethod)
+Calculate lrParamsRow.$cols.C1.$name as 'fieldAndMethod'
+Do $cinst.$_notifyEvent('evSetFieldAndMethod',lrParamsRow)

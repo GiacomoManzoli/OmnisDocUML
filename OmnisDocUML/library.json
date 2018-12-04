@@ -30,7 +30,7 @@
 		"hscale": 0,
 		"iconlib": "",
 		"iconset": "",
-		"initiallayoutbreakpoints": "",
+		"initiallayoutbreakpoints": "320,768,1024",
 		"javareturnsnative": true,
 		"justifiedtextthreshold": 75,
 		"keyevents": false,

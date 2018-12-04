@@ -1,6 +1,6 @@
 {
 	"classtype": "kMenu",
-	"internalversion": 2,
+	"internalversion": 3,
 	"superclass": "mnu_Base",
 	"designtaskname": "Startup_Task",
 	"nextident": 1015,
@@ -37,7 +37,7 @@
 		"helptext": "",
 		"inheritedorder": 0,
 		"issupercomponent": false,
-		"moddate": "2018-11-16 08:08:52",
+		"moddate": "2018-11-23 00:14:37",
 		"showascheckedout": false,
 		"title": {
 			"type": 0,

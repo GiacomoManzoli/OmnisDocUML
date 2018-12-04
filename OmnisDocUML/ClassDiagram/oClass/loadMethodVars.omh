@@ -1,4 +1,4 @@
-Do method makeVarList ('Locals',pirMethodRef.$lvardefs.$ref) Returns lvVarsList
+Do method makeVarList (ckScopeLocal,pirMethodRef.$lvardefs.$ref) Returns lvVarsList
 
 Do lvVarsList.$search(pos('p',$ref.name)<>1)
 Do lvVarsList.$remove(kListKeepSelected)

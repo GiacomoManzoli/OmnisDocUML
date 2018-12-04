@@ -1,7 +1,7 @@
 Calculate iirSubwGraph.$classname as 'OmnisDocUML.Subw_OBGraph'
 Calculate ioGraphViz as iirSubwGraph.$getGraphVizInterface()
 
-
+Calculate ibRenderCompact as kTrue
 
 
 ;  Do $cinst.$menus.$add('mnu_Render') Returns lirMenu
@@ -9,6 +9,11 @@ Calculate ioGraphViz as iirSubwGraph.$getGraphVizInterface()
 Do $cinst.$menus.$add('mnu_File') Returns iirMenuFile
 Do iirMenuFile.$setCallback(con($cinst().$fullname(),'.$fileMenuCallback'))
 Do iirMenuFile.$enableAction('actSave',kFalse)
+
+Do $cinst.$menus.$add('mnu_RenderOptions') Returns iirMenuRenderOptions
+Do iirMenuRenderOptions.$setCallback(con($cinst().$fullname(),'.$renderOptionsMenuCallback'))
+Do iirMenuRenderOptions.$checkItem('itmFieldAndMethod',ibRenderCompact)
+
 
 Do $cinst.$menus.$add('mnu_View') Returns lirMenu
 Do lirMenu.$setCallback(con($cinst().$fullname(),'.$viewMenuCallback'))

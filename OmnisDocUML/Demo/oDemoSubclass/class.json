@@ -1,30 +1,17 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 3,
+	"internalversion": 4,
+	"superclass": "OmnisDocUML.oDemoBase",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
 	],
 	"ivardefs": [
 		{
-			"name": "icCurrentEngineName",
-			"order": 4,
-			"type": "kCharacter",
-			"subtype": "kSimplechar",
-			"sublen": 100
-		},
-		{
-			"name": "iirOBrowser",
+			"name": "ioUtils",
 			"order": 1,
-			"type": "kItemref",
-			"subtype": "",
-			"sublen": 0
-		},
-		{
-			"name": "ilEngineNameList",
-			"order": 3,
-			"type": "kList",
-			"subtype": "",
+			"type": "kObject",
+			"subtype": "OmnisDocUML.oLibUtils",
 			"sublen": 0
 		}
 	],
@@ -32,13 +19,13 @@
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2018-11-18 22:52:45",
+		"createdate": "2018-12-04 21:00:12",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
 		"external": true,
 		"issupercomponent": false,
-		"moddate": "2018-11-23 00:14:37",
+		"moddate": "2018-12-04 21:31:11",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

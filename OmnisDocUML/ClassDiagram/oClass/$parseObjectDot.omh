@@ -1,8 +1,13 @@
-Do method parseVarsDot Returns lcVars
-Do method parseMethodsDot Returns lcMethods
+If pbRenderFieldAndMethod
+	Do method parseVarsDot Returns lcVars
+	Do method parseMethodsDot Returns lcMethods
+	Calculate lcFieldAndMethods as con(' | ',lcVars,' | ',lcMethods)
+Else
+	Calculate lcFieldAndMethods as ''
+End If
 
 Begin text block
-Text: {"[icQualifiedName]" [[ label="{[icQualifiedName] | [lcVars] | [lcMethods] }"]}
+Text: {"[icQualifiedName]" [[ label="{[icQualifiedName] [lcFieldAndMethods] }"]}
 End text block
 Get text block lcText
 ;  Breakpoint

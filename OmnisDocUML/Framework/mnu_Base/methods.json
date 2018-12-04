@@ -94,5 +94,33 @@
 		"lvardefs": [
 
 		]
+	},
+	{
+		"name": "$checkItem",
+		"ident": 5,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pcActionName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1,
+				"desc": "Action to be checked"
+			},
+			{
+				"name": "pbChecked",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"desc": "Check or de-check the action"
+			}
+		],
+		"lvardefs": [
+
+		]
 	}
 ]

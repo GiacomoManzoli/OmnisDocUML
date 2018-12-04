@@ -190,7 +190,7 @@
 	{
 		"name": "$viewMenuCallback",
 		"ident": 4,
-		"order": 5,
+		"order": 6,
 		"pvardefs": [
 			{
 				"name": "pcEvName",
@@ -206,9 +206,41 @@
 		]
 	},
 	{
+		"name": "$renderOptionsMenuCallback",
+		"ident": 12,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pcEvName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 1000,
+				"param": 1
+			},
+			{
+				"name": "prEvData",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lirWndRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
 		"name": "$fileMenuCallback",
 		"ident": 5,
-		"order": 6,
+		"order": 8,
 		"pvardefs": [
 			{
 				"name": "pcEvName",
@@ -240,7 +272,7 @@
 	{
 		"name": "$wndOpenLibraryCallback",
 		"ident": 7,
-		"order": 7,
+		"order": 9,
 		"pvardefs": [
 			{
 				"name": "pcEvName",
@@ -266,7 +298,7 @@
 	{
 		"name": "loadLibrary",
 		"ident": 6,
-		"order": 8,
+		"order": 10,
 		"pvardefs": [
 			{
 				"name": "pcLibName",
@@ -290,7 +322,7 @@
 	{
 		"name": "saveSource",
 		"ident": 8,
-		"order": 9,
+		"order": 11,
 		"pvardefs": [
 
 		],
@@ -342,7 +374,7 @@
 	{
 		"name": "setSaveEnabled",
 		"ident": 9,
-		"order": 10,
+		"order": 12,
 		"pvardefs": [
 			{
 				"name": "pbEnabled",
@@ -360,7 +392,7 @@
 	{
 		"name": "-- Graph --",
 		"ident": 11,
-		"order": 11,
+		"order": 13,
 		"pvardefs": [
 
 		],
@@ -372,7 +404,7 @@
 	{
 		"name": "$graphVizCallback",
 		"ident": 10,
-		"order": 12,
+		"order": 14,
 		"pvardefs": [
 			{
 				"name": "pcEvName",

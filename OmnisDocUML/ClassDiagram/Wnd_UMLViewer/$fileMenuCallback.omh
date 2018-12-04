@@ -8,6 +8,7 @@ Switch pcEvName
 		
 	Case 'evExport'
 		Do ioGraphViz.$requestGraphSvg(icDotGraph,,con($cinst().$fullname,'.$graphVizCallback'))
+		
 	Case 'evQuit'
 		Do $cwind.$close()
 		

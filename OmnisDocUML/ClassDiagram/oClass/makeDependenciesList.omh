@@ -1,0 +1,7 @@
+Do llDependencyList.$define()
+Do llDependencyList.$cols.$add('scope',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('classname',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('varName',kCharacter,kSimplechar,1000)
+Do llDependencyList.$cols.$add('dependencyType',kCharacter,kSimplechar,100)
+Do llDependencyList.$cols.$add('dependencyTypeArrow',kCharacter,kSimplechar,100)
+Quit method llDependencyList

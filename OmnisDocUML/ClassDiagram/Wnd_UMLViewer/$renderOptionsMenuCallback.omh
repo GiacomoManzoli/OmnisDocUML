@@ -1,0 +1,4 @@
+Switch pcEvName
+	Case 'evSetFieldAndMethod'
+		Calculate ibRenderCompact as prEvData.fieldAndMethod
+End Switch
